@@ -4,11 +4,21 @@
 
 @font-face {
   font-family: MPLUSRounded1c;
-  src: url(/M_PLUS_Rounded_1c/MPLUSRounded1c-Medium.ttf);
+  src: url(/M_PLUS_Rounded_1c/MPLUSRounded1c-Bold.ttf);
 }
 
 * {
   font-family: MPLUSRounded1c;
   font-weight: inherit;
   transform: rotateZ(0.03deg);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#root,
+#__next {
+  height: 100%;
 }

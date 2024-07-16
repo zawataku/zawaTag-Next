@@ -5,7 +5,7 @@ export default function Header() {
         <div className="navbar bg-slate-100">
             <div className="navbar-start"></div>
             <div className="navbar-center">
-                <p className="text-xl">zawaTag</p>
+                <p className="text-3xl font-bold">ZawaTag</p>
             </div>
             <div className="navbar-end"></div>
         </div>
