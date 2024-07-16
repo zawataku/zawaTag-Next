@@ -18,8 +18,8 @@ const Home: React.FC = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const result = await axios.get<GpsData[]>('/api/gps');
-        setGpsData(result.data[0]);
+        const result = await axios.get<GpsData>('/api/gpsdata');
+        setGpsData(result.data);
       } catch (error) {
         console.error('Error fetching GPS data:', error);
       }
