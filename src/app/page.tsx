@@ -31,12 +31,7 @@ const Home: React.FC = () => {
     <div className="flex flex-col h-full">
       <Header />
       <div className="flex-grow relative">
-        {gpsData ? (
-          <>
-            <p>Latitude: {gpsData.latitude}</p>
-            <p>Longitude: {gpsData.longitude}</p>
-          </>
-        ) : (
+        {!gpsData && (
           <p className="absolute bg-red-500 text-white z-50 w-full text-xl text-center py-2 opacity-90">GPSデータが受信できません．</p>
         )}
         <Map latitude={gpsData?.latitude || 36.530742400318914} longitude={gpsData?.longitude || 136.62777349638162} />
